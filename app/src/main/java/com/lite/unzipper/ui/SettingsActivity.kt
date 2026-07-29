@@ -1,6 +1,7 @@
 package com.lite.unzipper.ui
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.lite.unzipper.BuildConfig
@@ -10,6 +11,7 @@ import com.lite.unzipper.settings.AppSettings
 import com.lite.unzipper.settings.DarkMode
 
 class SettingsActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivitySettingsBinding
     private lateinit var settings: AppSettings
 
@@ -17,8 +19,14 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         settings = AppSettings(this)
-        binding.toolbar.setNavigationOnClickListener { finish() }
+
+        binding.toolbar.setNavigationOnClickListener {
+            OppoViewSeamlessHelper.skipBackAnimation(this)
+            finish()
+        }
+
         setupDarkMode()
         setupThreadCount()
         setupAbout()
@@ -29,22 +37,27 @@ class SettingsActivity : AppCompatActivity() {
         binding.cardDarkMode.setOnClickListener {
             val items = DarkMode.entries.map { it.label }.toTypedArray()
             val current = DarkMode.entries.indexOf(settings.darkMode)
-            MaterialAlertDialogBuilder(this).setTitle(R.string.settings_dark_mode)
+            MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.settings_dark_mode)
                 .setSingleChoiceItems(items, current) { dialog, which ->
                     val mode = DarkMode.entries[which]
                     settings.setDarkMode(mode)
                     binding.darkModeValue.text = mode.label
                     dialog.dismiss()
-                }.setNegativeButton(R.string.cancel, null).show()
+                }
+                .setNegativeButton(R.string.cancel, null)
+                .show()
         }
     }
 
     private fun setupThreadCount() {
         val current = settings.threadCount
+        val max = 4
         binding.threadSlider.valueFrom = 1.0f
-        binding.threadSlider.valueTo = 4.0f
+        binding.threadSlider.valueTo = max.toFloat()
         binding.threadSlider.value = current.toFloat()
         updateThreadDisplay(current)
+
         binding.threadSlider.addOnChangeListener { _, value, _ ->
             val count = value.toInt()
             settings.threadCount = count
