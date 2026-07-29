@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">轻解压</string>
+    <string name="app_subtitle">轻量、简约、实用的压缩包解压工具</string>
+
+    <string name="select_archive">选择压缩包</string>
+    <string name="select_file">选择压缩包</string>
+    <string name="extract">解压</string>
+    <string name="extract_all">全部解压</string>
+    <string name="selected_file">已选择文件</string>
+    <string name="selected_files">已选择 %1$d 个文件</string>
+    <string name="welcome_hint">请选择需要解压的压缩包</string>
+    <string name="empty_hint">还没有选择压缩包</string>
+    <string name="empty_sub_hint">点击下方按钮选择压缩包开始解压，支持大部分常见压缩格式和加密文件。</string>
+    <string name="please_select_file">请先选择压缩包</string>
+    <string name="unsupported_format">暂不支持该压缩格式</string>
+    <string name="ready_to_extract">已选择，点击解压开始</string>
+    <string name="extracting">正在解压：%1$s</string>
+    <string name="extracting_batch">批量解压 (%1$d/%2$d)：%3$s</string>
+    <string name="extract_success">解压完成，共 %1$d 项</string>
+    <string name="extract_batch_success">批量解压完成：成功 %1$d，失败 %2$d</string>
+    <string name="extract_failed">解压失败：%1$s</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="cancel_extraction">取消解压</string>
+    <string name="show_failures">查看失败详情</string>
+    <string name="toggle_dark_mode">切换暗色模式</string>
+    <string name="thread_count">线程数</string>
+    <string name="thread_count_current">%1$d 线程</string>
+    <string name="thread_count_dialog_title">解压并行线程数</string>
+    <string name="dark_mode_system_short">跟随系统</string>
+    <string name="dark_mode_light_short">浅色</string>
+    <string name="dark_mode_dark_short">深色</string>
+
+    <string name="password_required">需要密码</string>
+    <string name="password_hint">该压缩包已加密，请输入密码</string>
+    <string name="password_input">密码</string>
+    <string name="password_show">显示密码</string>
+    <string name="password_skip">无密码</string>
+
+    <string name="settings">设置</string>
+    <string name="settings_dark_mode">主题模式</string>
+    <string name="settings_thread_count">并行线程数</string>
+    <string name="settings_thread_count_summary">同时解压多个压缩包的最大并发数（%1$d）</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_about_summary">轻解压 v%1$s</string>
+    <string name="dark_mode_system">跟随系统</string>
+    <string name="dark_mode_light">浅色</string>
+    <string name="dark_mode_dark">深色</string>
+    <string name="thread_auto">自动（%1$d 线程）</string>
+
+    <string name="supported_formats_label">支持格式</string>
+    <string name="supported_formats">ZIP · RAR · 7z · TAR · GZIP · BZIP2 · XZ · Zstandard\n分卷：.001/.z01/.partNN.rar/.7z.001\n密码：ZIP / RAR / 7z</string>
+
+    <string name="notification_channel_name">解压进度</string>
+    <string name="notification_channel_desc">显示当前解压任务的进度</string>
+</resources>

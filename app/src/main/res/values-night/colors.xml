@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_primary">#0A84FF</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#001F4A</color>
+    <color name="md_on_primary_container">#D5E1FF</color>
+
+    <color name="md_secondary">#8E98AB</color>
+    <color name="md_on_secondary">#1C1C1E</color>
+    <color name="md_secondary_container">#303238</color>
+    <color name="md_on_secondary_container">#DAE2F9</color>
+
+    <color name="md_tertiary">#87688B</color>
+    <color name="md_on_tertiary">#1C1C1E</color>
+    <color name="md_tertiary_container">#3B1F3F</color>
+    <color name="md_on_tertiary_container">#FBD7FB</color>
+
+    <color name="md_error">#FF453A</color>
+    <color name="md_on_error">#FFFFFF</color>
+    <color name="md_error_container">#410002</color>
+    <color name="md_on_error_container">#FFDAD6</color>
+
+    <color name="md_background">#000000</color>
+    <color name="md_on_background">#F2F2F7</color>
+    <color name="md_surface">#1C1C1E</color>
+    <color name="md_on_surface">#F2F2F7</color>
+    <color name="md_surface_variant">#2C2C2E</color>
+    <color name="md_on_surface_variant">#D1D1D6</color>
+    <color name="md_outline">#545458</color>
+
+    <color name="glass_light_surface">#661C1C1E</color>
+    <color name="glass_light_border">#26FFFFFF</color>
+    <color name="glass_dark_surface">#801C1C1E</color>
+    <color name="glass_dark_border">#26FFFFFF</color>
+</resources>

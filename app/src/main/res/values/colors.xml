@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_primary">#007AFF</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#D4E3FF</color>
+    <color name="md_on_primary_container">#00174D</color>
+
+    <color name="md_secondary">#565E71</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_secondary_container">#DAE2F9</color>
+    <color name="md_on_secondary_container">#131B2C</color>
+
+    <color name="md_tertiary">#715573</color>
+    <color name="md_on_tertiary">#FFFFFF</color>
+    <color name="md_tertiary_container">#FBD7FB</color>
+    <color name="md_on_tertiary_container">#29132D</color>
+
+    <color name="md_error">#FF3B30</color>
+    <color name="md_on_error">#FFFFFF</color>
+    <color name="md_error_container">#FFDAD6</color>
+    <color name="md_on_error_container">#410002</color>
+
+    <color name="md_background">#F2F2F7</color>
+    <color name="md_on_background">#1C1C1E</color>
+    <color name="md_surface">#FFFFFF</color>
+    <color name="md_on_surface">#1C1C1E</color>
+    <color name="md_surface_variant">#F2F2F7</color>
+    <color name="md_on_surface_variant">#3C3C43</color>
+    <color name="md_outline">#C6C6C8</color>
+
+    <color name="glass_light_surface">#CCFFFFFF</color>
+    <color name="glass_light_border">#1AFFFFFF</color>
+    <color name="glass_dark_surface">#801C1C1E</color>
+    <color name="glass_dark_border">#26FFFFFF</color>
+
+    <color name="accent_pink">#FF375F</color>
+    <color name="accent_orange">#FF9F0A</color>
+    <color name="accent_yellow">#FFD60A</color>
+    <color name="accent_green">#30D158</color>
+    <color name="accent_mint">#64D2FF</color>
+    <color name="accent_purple">#BF5AF2</color>
+    <color name="accent_blue">#007AFF</color>
+
+    <color name="brand_primary">#007AFF</color>
+    <color name="brand_primary_container">#D4E3FF</color>
+    <color name="brand_on_primary_container">#00174D</color>
+    <color name="brand_secondary">#565E71</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>
