@@ -1,0 +1,33 @@
+# Gradle
+.gradle/
+build/
+
+# Android / IntelliJ
+*.iml
+.idea/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android SDK 本地缓存
+.android-cache/
+.android-sdk/
+
+# 签名文件（可选保留，如有需要请手动取消注释并在 .gitignore 移除）
+# *.jks
+# *.keystore
+
+# APK/AAB 构建产物（可选择性保留 release signed，默认全部排除）
+*.apk
+*.aab
+*.ap_
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.log

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Android 11+ 使用 SAF，无需申请存储权限；保留以下权限用于兼容旧设备 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LiteUnzipper"
+        android:requestLegacyExternalStorage="false"
+        tools:targetApi="30">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- 支持从其他应用"打开方式"调用 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.zip" />
+                <data android:pathPattern=".*\\.rar" />
+                <data android:pathPattern=".*\\.7z" />
+                <data android:pathPattern=".*\\.tar" />
+                <data android:pathPattern=".*\\.gz" />
+                <data android:pathPattern=".*\\.tgz" />
+                <data android:pathPattern=".*\\.bz2" />
+                <data android:pathPattern=".*\\.xz" />
+                <data android:pathPattern=".*\\.zst" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>
